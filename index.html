@@ -3,28 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My E-Commerce Website</title>
+    <title>ircStore</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Welcome to My E-Commerce Store</h1>
+    <header class="">
+      <div class="navbar">
+        <div class="navbar-logo">ircStore</div>
+        <div class="navbar-icons">
+          <i class="fa-solid fa-cart-shopping navbar-icon"></i>
+          <i class="fa-solid fa-bars navbar-icon" id="menu-toggle"></i>
+        </div>
+      </div>
     </header>
-    <main>
-      <section id="products">
-        <div class="product">
-          <img src="product1.jpg" alt="Product 1" />
-          <h2>Product 1</h2>
-          <p>Description of product 1</p>
-          <p>$10.00</p>
+
+    <div id="menu" class="menu">
+      <a href="#home">All Products</a>
+      <a href="#about">Sofa</a>
+      <a href="#services">Chair</a>
+      <a href="#contact">Table</a>
+    </div>
+    <main class="container">
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span>Style</span><span>Comfort &</span><span>Affordable</span>
+          </h1>
+          <a href="#shop-now" class="btn-primary">Explore Store</a>
         </div>
-        <div class="product">
-          <img src="product2.jpg" alt="Product 2" />
-          <h2>Product 2</h2>
-          <p>Description of product 2</p>
-          <p>$15.00</p>
+      </section>
+      <section class="collection">
+        <div style="background-color: #f4f4f5">
+          <div class="collection-image-container">
+            <img src="/pictures/photo1.jpg" class="collection-image" />
+          </div>
+          <div class="collection-description-container">
+            <h1>Chair Collection!</h1>
+            <p>Launch Offer 15% Off!</p>
+            <a class="btn-primary">
+              <span class="fa-solid fa-arrow-right"></span> View Collection
+            </a>
+          </div>
         </div>
-        <!-- Add more products as needed -->
+        <div style="background-color: #f4f4f5">
+          <div class="collection-image-container">
+            <img src="/pictures/photo1.jpg" class="collection-image" />
+          </div>
+          <div class="collection-description-container">
+            <h1>Modern Collection!</h1>
+            <p>New Season Stock</p>
+            <a class="btn-primary">
+              <span class="fa-solid fa-arrow-right"></span> View Collection
+            </a>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
