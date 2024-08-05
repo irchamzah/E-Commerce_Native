@@ -16,6 +16,7 @@
     />
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="cart.css" />
   </head>
   <body>
     <header class="">
@@ -36,19 +37,242 @@
           </ul>
         </div>
         <div class="navbar-icons">
-          <span>£0.00</span>
+          <span class="total-price">£0.00</span>
           <i class="fa-solid fa-cart-shopping navbar-icon"></i>
           <i class="fa-solid fa-bars navbar-icon" id="menu-toggle"></i>
         </div>
       </div>
     </header>
 
+    <!-- MENU MOBILE -->
     <div id="menu" class="menu" style="display: none">
       <a href="#home">All Products</a>
       <a href="#about">Sofa</a>
       <a href="#services">Chair</a>
       <a href="#contact">Table</a>
     </div>
+
+    <!-- SIDEBAR CART -->
+    <div id="sidebar" class="sidebar">
+      <!--  -->
+      <div class="sidebar-header">
+        <p>Shopping Cart</p>
+        <i class="fa-solid fa-xmark" id="close-cart"></i>
+      </div>
+
+      <!-- kumpulan item yang dimasukkan ke keranjang -->
+      <ul class="cart-items">
+        <!-- item 1 -->
+        <li class="item-container">
+          <div class="item-image"><img src="" alt="" /></div>
+          <div class="item-details">
+            <div class="item-name">
+              <a href="">Product's name</a>
+              <a href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="item-quantity">
+              <div>
+                <a href="javascript:void(0);" class="minus">
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+                <input type="number" min="1" />
+                <a href="javascript:void(0);" class="plus">
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <span>£0.00</span>
+            </div>
+          </div>
+        </li>
+        <hr />
+        <li class="item-container">
+          <div class="item-image"><img src="" alt="" /></div>
+          <div class="item-details">
+            <div class="item-name">
+              <a href="">Product's name</a>
+              <a href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="item-quantity">
+              <div>
+                <a href="javascript:void(0);" class="minus">
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+                <input type="number" min="1" />
+                <a href="javascript:void(0);" class="plus">
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <span>£0.00</span>
+            </div>
+          </div>
+        </li>
+        <hr />
+        <li class="item-container">
+          <div class="item-image"><img src="" alt="" /></div>
+          <div class="item-details">
+            <div class="item-name">
+              <a href="">Product's name</a>
+              <a href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="item-quantity">
+              <div>
+                <a href="javascript:void(0);" class="minus">
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+                <input type="number" min="1" />
+                <a href="javascript:void(0);" class="plus">
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <span>£0.00</span>
+            </div>
+          </div>
+        </li>
+        <hr />
+        <li class="item-container">
+          <div class="item-image"><img src="" alt="" /></div>
+          <div class="item-details">
+            <div class="item-name">
+              <a href="">Product's name</a>
+              <a href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="item-quantity">
+              <div>
+                <a href="javascript:void(0);" class="minus">
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+                <input type="number" min="1" />
+                <a href="javascript:void(0);" class="plus">
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <span>£0.00</span>
+            </div>
+          </div>
+        </li>
+        <hr />
+        <li class="item-container">
+          <div class="item-image"><img src="" alt="" /></div>
+          <div class="item-details">
+            <div class="item-name">
+              <a href="">Product's name</a>
+              <a href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="item-quantity">
+              <div>
+                <a href="javascript:void(0);" class="minus">
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+                <input type="number" min="1" />
+                <a href="javascript:void(0);" class="plus">
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <span>£0.00</span>
+            </div>
+          </div>
+        </li>
+        <hr />
+        <li class="item-container">
+          <div class="item-image"><img src="" alt="" /></div>
+          <div class="item-details">
+            <div class="item-name">
+              <a href="">Product's name</a>
+              <a href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="item-quantity">
+              <div>
+                <a href="javascript:void(0);" class="minus">
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+                <input type="number" min="1" />
+                <a href="javascript:void(0);" class="plus">
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <span>£0.00</span>
+            </div>
+          </div>
+        </li>
+        <hr />
+        <li class="item-container">
+          <div class="item-image"><img src="" alt="" /></div>
+          <div class="item-details">
+            <div class="item-name">
+              <a href="">Product's name</a>
+              <a href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="item-quantity">
+              <div>
+                <a href="javascript:void(0);" class="minus">
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+                <input type="number" min="1" />
+                <a href="javascript:void(0);" class="plus">
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <span>£0.00</span>
+            </div>
+          </div>
+        </li>
+        <hr />
+        <li class="item-container">
+          <div class="item-image"><img src="" alt="" /></div>
+          <div class="item-details">
+            <div class="item-name">
+              <a href="">Product's name</a>
+              <a href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="item-quantity">
+              <div>
+                <a href="javascript:void(0);" class="minus">
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+                <input type="number" min="1" />
+                <a href="javascript:void(0);" class="plus">
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <span>£0.00</span>
+            </div>
+          </div>
+        </li>
+        <hr />
+        <li class="item-container">
+          <div class="item-image"><img src="" alt="" /></div>
+          <div class="item-details">
+            <div class="item-name">
+              <a href="">Product's name</a>
+              <a href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="item-quantity">
+              <div>
+                <a href="javascript:void(0);" class="minus">
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+                <input type="number" min="1" />
+                <a href="javascript:void(0);" class="plus">
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <span>£0.00</span>
+            </div>
+          </div>
+        </li>
+        <hr />
+      </ul>
+
+      <!-- sidebar-footer -->
+      <p class="cart-subtotal"><strong>Subtotal:</strong> <span>£0.00</span></p>
+      <!-- saya ingin tombol disini column -->
+      <p class="cart-button">
+        <a href="">View Cart</a>
+        <a href="">Checkout</a>
+      </p>
+    </div>
+    <div id="overlay" class="overlay"></div>
+
     <main class="container">
       <!-- Hero -->
       <section class="hero">
@@ -145,10 +369,10 @@
 
               <div class="product-icons">
                 <div class="product-icon-container">
-                  <i class="fa-solid fa-cart-shopping">
+                  <i class="fa-solid fa-cart-shopping cart-icon-product">
                     <p class="add-to-cart">Add To Cart</p>
                   </i>
-                  <i class="fa-solid fa-eye">
+                  <i class="fa-solid fa-eye eye-icon-product">
                     <p class="quick-view">Quick View</p>
                   </i>
                 </div>
@@ -169,10 +393,10 @@
               />
               <div class="product-icons">
                 <div class="product-icon-container">
-                  <i class="fa-solid fa-cart-shopping">
+                  <i class="fa-solid fa-cart-shopping cart-icon-product">
                     <p class="add-to-cart">Add To Cart</p>
                   </i>
-                  <i class="fa-solid fa-eye">
+                  <i class="fa-solid fa-eye eye-icon-product">
                     <p class="quick-view">Quick View</p>
                   </i>
                 </div>
@@ -193,10 +417,10 @@
               />
               <div class="product-icons">
                 <div class="product-icon-container">
-                  <i class="fa-solid fa-cart-shopping">
+                  <i class="fa-solid fa-cart-shopping cart-icon-product">
                     <p class="add-to-cart">Add To Cart</p>
                   </i>
-                  <i class="fa-solid fa-eye">
+                  <i class="fa-solid fa-eye eye-icon-product">
                     <p class="quick-view">Quick View</p>
                   </i>
                 </div>
@@ -217,10 +441,10 @@
               />
               <div class="product-icons">
                 <div class="product-icon-container">
-                  <i class="fa-solid fa-cart-shopping">
+                  <i class="fa-solid fa-cart-shopping cart-icon-product">
                     <p class="add-to-cart">Add To Cart</p>
                   </i>
-                  <i class="fa-solid fa-eye">
+                  <i class="fa-solid fa-eye eye-icon-product">
                     <p class="quick-view">Quick View</p>
                   </i>
                 </div>
@@ -332,5 +556,6 @@
       <p class="powered">Powered by ircStore</p>
     </footer>
     <script src="script.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>

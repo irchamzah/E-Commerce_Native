@@ -80,7 +80,11 @@
     transition: background-color 0.3s ease-in-out;
   }
 
-  .navbar-icons:hover {
+  .total-price:hover {
+    opacity: 0.8;
+  }
+
+  .hover-opacity:hover {
     opacity: 0.8;
   }
 
@@ -389,15 +393,15 @@
     border-bottom: 5px solid transparent; /* Sisi bawah tail */
   }
 
-  .fa-cart-shopping, .fa-eye {
+  .cart-icon-product, .eye-icon-product {
     position: relative;
   }
 
-  .fa-cart-shopping:hover, .fa-eye:hover {
+  .cart-icon-product:hover, .eye-icon-product:hover {
     opacity: 1;
   }
   
-  .fa-cart-shopping:hover .add-to-cart, .fa-eye:hover:hover .quick-view {
+  .cart-icon-product:hover .add-to-cart, .eye-icon-product:hover:hover .quick-view {
     visibility: visible;
     opacity:1;
   }
@@ -701,9 +705,7 @@
     transition: background-color 0.3s ease-in-out;
   }
 
-  .navbar-icons:hover {
-    opacity: 0.8;
-  }
+
 
   .menu {
     display: none; /* Menu tidak ditampilkan secara default */
@@ -1007,15 +1009,15 @@
     border-bottom: 5px solid transparent; /* Sisi bawah tail */
   }
 
-  .fa-cart-shopping, .fa-eye {
+  .cart-icon-product, .eye-icon-product {
     position: relative;
   }
 
-  .fa-cart-shopping:hover, .fa-eye:hover {
+  .cart-icon-product:hover, .eye-icon-product:hover {
     opacity: 1;
   }
   
-  .fa-cart-shopping:hover .add-to-cart, .fa-eye:hover:hover .quick-view {
+  .cart-icon-product:hover .add-to-cart, .eye-icon-product:hover:hover .quick-view {
     visibility: visible;
     opacity:1;
   }
@@ -1617,15 +1619,15 @@
     border-bottom: 5px solid transparent; /* Sisi bawah tail */
   }
 
-  .fa-cart-shopping, .fa-eye {
+  .cart-icon-product, .eye-icon-product {
     position: relative;
   }
 
-  .fa-cart-shopping:hover, .fa-eye:hover {
+  .cart-icon-product:hover, .eye-icon-product:hover {
     opacity: 1;
   }
   
-  .fa-cart-shopping:hover .add-to-cart, .fa-eye:hover:hover .quick-view {
+  .cart-icon-product:hover .add-to-cart, .eye-icon-product:hover:hover .quick-view {
     visibility: visible;
     opacity:1;
   }
@@ -1918,10 +1920,6 @@
     cursor: pointer;
     color: #607d8b;
     transition: background-color 0.3s ease-in-out;
-  }
-
-  .navbar-icon:hover {
-    opacity: 0.8;
   }
 
   .menu {
@@ -2219,14 +2217,14 @@
     border-bottom: 5px solid transparent; /* Sisi bawah tail */
   }
 
-  .fa-cart-shopping, .fa-eye {
+  .cart-icon-product, .eye-icon-product {
     position: relative;
   }
 
-  .fa-cart-shopping:hover, .fa-eye:hover {
+  .cart-icon-product:hover, .eye-icon-product:hover {
     opacity: 1;
   }
-  .fa-cart-shopping:hover .add-to-cart, .fa-eye:hover:hover .quick-view {
+  .cart-icon-product:hover .add-to-cart, .eye-icon-product:hover:hover .quick-view {
     visibility: visible;
     opacity:1;
   }
