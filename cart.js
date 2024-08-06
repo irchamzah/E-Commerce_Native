@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const cartIcon = document.querySelector(".fa-cart-shopping");
+  const cartIcon = document.getElementById("cart");
   const totalPrice = document.querySelector(".total-price");
   const sidebar = document.getElementById("sidebar");
   const overlay = document.getElementById("overlay");

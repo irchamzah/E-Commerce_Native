@@ -15,15 +15,17 @@
       rel="stylesheet"
     />
     <!-- Styles -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="filter.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../cart.css" />
   </head>
   <body>
     <header class="">
       <div class="navbar">
-        <div class="navbar-logo">ircStore</div>
+        <a href="/"><div class="navbar-logo">ircStore</div></a>
         <div>
           <ul class="navbar-menu">
-            <li><a href="#home">All Products</a></li>
+            <li><a href="/products">All Products</a></li>
             <li><a href="#about">Sofa</a></li>
             <li><a href="#services">Chair</a></li>
             <li><a href="#contact">Table</a></li>
@@ -36,98 +38,350 @@
           </ul>
         </div>
         <div class="navbar-icons">
-          <span>£0.00</span>
-          <i class="fa-solid fa-cart-shopping navbar-icon"></i>
+          <span class="total-price">£0.00</span>
+          <i class="fa-solid fa-cart-shopping navbar-icon" id="cart"></i>
           <i class="fa-solid fa-bars navbar-icon" id="menu-toggle"></i>
         </div>
       </div>
     </header>
 
-    <div id="menu" class="menu">
+    <!-- MENU MOBILE -->
+    <div id="menu" class="menu" style="display: none">
       <a href="#home">All Products</a>
       <a href="#about">Sofa</a>
       <a href="#services">Chair</a>
       <a href="#contact">Table</a>
     </div>
-    <main class="container">
-      <!-- Hero -->
-      <section class="hero">
-        <div class="hero-content">
-          <h1 class="hero-title">
-            <span>Style</span><span>Comfort &</span><span>Affordable</span>
-          </h1>
-          <a href="#shop-now" class="btn-primary">Explore Store</a>
-        </div>
-      </section>
-      <!-- End Hero -->
-      <!-- Collection -->
-      <section class="collection">
-        <div class="collection-container-1">
-          <div class="collection-image-container">
-            <img src="/pictures/photo1.jpg" class="collection-image" />
-          </div>
-          <div class="collection-description-container">
-            <h1>Chair Collection!</h1>
-            <p>Launch Offer 15% Off!</p>
-            <a class="btn-primary">
-              <i class="fa-solid fa-arrow-right"></i> View Collection
-            </a>
-          </div>
-        </div>
 
-        <div class="collection-container-2">
-          <div class="collection-image-container">
-            <img src="/pictures/photo1.jpg" class="collection-image" />
+    <!-- RIGHT SIDEBAR CART -->
+    <div id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <p>Shopping Cart</p>
+        <i class="fa-solid fa-xmark" id="close-cart"></i>
+      </div>
+
+      <ul class="cart-items">
+        <!-- item 1 -->
+        <li class="item-container">
+          <div class="item-image"><img src="" alt="" /></div>
+          <div class="item-details">
+            <div class="item-name">
+              <a href="">Product's name</a>
+              <a href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="item-quantity">
+              <div>
+                <a href="javascript:void(0);" class="minus">
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+                <input type="number" min="1" />
+                <a href="javascript:void(0);" class="plus">
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <span>£0.00</span>
+            </div>
           </div>
-          <div class="collection-description-container">
-            <h1>Modern Collection!</h1>
-            <p>New Season Stock</p>
-            <a class="btn-primary">
-              <i class="fa-solid fa-arrow-right"></i> View Collection
-            </a>
+        </li>
+        <hr />
+        <li class="item-container">
+          <div class="item-image"><img src="" alt="" /></div>
+          <div class="item-details">
+            <div class="item-name">
+              <a href="">Product's name</a>
+              <a href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="item-quantity">
+              <div>
+                <a href="javascript:void(0);" class="minus">
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+                <input type="number" min="1" />
+                <a href="javascript:void(0);" class="plus">
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <span>£0.00</span>
+            </div>
+          </div>
+        </li>
+        <hr />
+        <li class="item-container">
+          <div class="item-image"><img src="" alt="" /></div>
+          <div class="item-details">
+            <div class="item-name">
+              <a href="">Product's name</a>
+              <a href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="item-quantity">
+              <div>
+                <a href="javascript:void(0);" class="minus">
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+                <input type="number" min="1" />
+                <a href="javascript:void(0);" class="plus">
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <span>£0.00</span>
+            </div>
+          </div>
+        </li>
+        <hr />
+        <li class="item-container">
+          <div class="item-image"><img src="" alt="" /></div>
+          <div class="item-details">
+            <div class="item-name">
+              <a href="">Product's name</a>
+              <a href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="item-quantity">
+              <div>
+                <a href="javascript:void(0);" class="minus">
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+                <input type="number" min="1" />
+                <a href="javascript:void(0);" class="plus">
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <span>£0.00</span>
+            </div>
+          </div>
+        </li>
+        <hr />
+        <li class="item-container">
+          <div class="item-image"><img src="" alt="" /></div>
+          <div class="item-details">
+            <div class="item-name">
+              <a href="">Product's name</a>
+              <a href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="item-quantity">
+              <div>
+                <a href="javascript:void(0);" class="minus">
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+                <input type="number" min="1" />
+                <a href="javascript:void(0);" class="plus">
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <span>£0.00</span>
+            </div>
+          </div>
+        </li>
+        <hr />
+        <li class="item-container">
+          <div class="item-image"><img src="" alt="" /></div>
+          <div class="item-details">
+            <div class="item-name">
+              <a href="">Product's name</a>
+              <a href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="item-quantity">
+              <div>
+                <a href="javascript:void(0);" class="minus">
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+                <input type="number" min="1" />
+                <a href="javascript:void(0);" class="plus">
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <span>£0.00</span>
+            </div>
+          </div>
+        </li>
+        <hr />
+        <li class="item-container">
+          <div class="item-image"><img src="" alt="" /></div>
+          <div class="item-details">
+            <div class="item-name">
+              <a href="">Product's name</a>
+              <a href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="item-quantity">
+              <div>
+                <a href="javascript:void(0);" class="minus">
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+                <input type="number" min="1" />
+                <a href="javascript:void(0);" class="plus">
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <span>£0.00</span>
+            </div>
+          </div>
+        </li>
+        <hr />
+        <li class="item-container">
+          <div class="item-image"><img src="" alt="" /></div>
+          <div class="item-details">
+            <div class="item-name">
+              <a href="">Product's name</a>
+              <a href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="item-quantity">
+              <div>
+                <a href="javascript:void(0);" class="minus">
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+                <input type="number" min="1" />
+                <a href="javascript:void(0);" class="plus">
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <span>£0.00</span>
+            </div>
+          </div>
+        </li>
+        <hr />
+        <li class="item-container">
+          <div class="item-image"><img src="" alt="" /></div>
+          <div class="item-details">
+            <div class="item-name">
+              <a href="">Product's name</a>
+              <a href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="item-quantity">
+              <div>
+                <a href="javascript:void(0);" class="minus">
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+                <input type="number" min="1" />
+                <a href="javascript:void(0);" class="plus">
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <span>£0.00</span>
+            </div>
+          </div>
+        </li>
+        <hr />
+      </ul>
+
+      <p class="cart-subtotal"><strong>Subtotal:</strong> <span>£0.00</span></p>
+      <p class="cart-button">
+        <a href="">View Cart</a>
+        <a href="">Checkout</a>
+      </p>
+    </div>
+
+    <!-- LEFT SIDEBAR FILTER -->
+    <div id="leftbar-filter" class="leftbar-filter">
+      <!-- header -->
+      <div class="leftbar-filter-header">
+        <p>Filter</p>
+        <i class="fa-solid fa-xmark" id="close-leftbar-filter"></i>
+      </div>
+
+      <!-- content -->
+      <div class="leftbar-filter-content">
+        <!-- search -->
+        <div class="search">
+          <form role="search" method="get" action="">
+            <div>
+              <input type="search" placeholder="Search products..." />
+              <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- price -->
+        <div class="price-range">
+          <div class="price-range-header">
+            <label>Price Range:</label>
+            <button id="reset-button" class="reset-btn">Reset</button>
+          </div>
+          <input
+            type="range"
+            id="min-range"
+            min="10000"
+            max="10000000"
+            value="10000"
+            step="10000"
+          />
+          <input
+            type="range"
+            id="max-range"
+            min="10000"
+            max="10000000"
+            value="10000000"
+            step="10000"
+          />
+          <div class="range-values">
+            <div>
+              <span>Rp.</span>
+              <input
+                type="number"
+                id="min-price"
+                min="10000"
+                value="10000"
+                step="1000"
+              />
+            </div>
+            <div>
+              <span>Rp.</span>
+              <input
+                type="number"
+                id="max-price"
+                min="10000"
+                value="10000000"
+                step="1000"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- categories  -->
+        <div class="categories">
+          <label>Product Categories</label>
+          <div class="categories">
+            <div class="category">
+              <input type="checkbox" id="category-1" />
+              <label for="category-1">Category 1</label>
+            </div>
+            <div class="category">
+              <input type="checkbox" id="category-2" />
+              <label for="category-2">Category 2</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+
+    <main class="container">
+      <!-- Filter -->
+      <section class="filter">
+        <div class="filter-container">
+          <button class="filter-button" id="filter-button">
+            <img src="../pictures/svg/filter.svg" alt="" />
+            <span>Filter</span>
+          </button>
+          <div class="filter-sort">
+            <select name="sort" id="sort">
+              <option value="default">Default Sorting</option>
+              <option value="newest">Sort by popularity</option>
+              <option value="oldest">Sort by average rating</option>
+              <option value="oldest">Sort by latest</option>
+              <option value="oldest">Sort by price: low to high</option>
+              <option value="oldest">Sort by price: high to low</option>
+            </select>
+            <div>
+              <img src="../pictures/svg/grid-4.svg" alt="arrow-down-a-z" />
+              <img src="../pictures/svg/grid-2.svg" alt="arrow-down-z-a" />
+            </div>
           </div>
         </div>
       </section>
-      <!-- End Collection -->
-      <!-- Services -->
-      <section class="services">
-        <div class="service">
-          <i class="fa-solid fa-truck"></i>
-          <h3>Free Shipping</h3>
-        </div>
-        <div class="service">
-          <i class="fa-solid fa-headset"></i>
-          <h3>24/7 Support</h3>
-        </div>
-        <div class="service">
-          <i class="fa-solid fa-lock"></i>
-          <h3>Secure Payment</h3>
-        </div>
-        <div class="service">
-          <i class="fa-solid fa-lock"></i>
-          <h3>Secure Payment</h3>
-        </div>
-        <div class="service">
-          <i class="fa-solid fa-lock"></i>
-          <h3>Secure Payment</h3>
-        </div>
-      </section>
-      <!-- End Services -->
-      <!-- Sale -->
-      <section class="sale">
-        <div>
-          <div class="sale-container">
-            <h1>Sale!</h1>
-            <p>10% Off On All Products!</p>
-            <a class="btn-primary"> Shop Now </a>
-          </div>
-        </div>
-      </section>
-      <!-- End Sale -->
+      <!-- End Filter -->
       <!-- Products -->
       <section class="products">
-        <h1>Our Latest Products</h1>
-        <div class="hr"></div>
         <div class="products-container">
           <div class="product-card">
             <div class="product-image-wrapper">
@@ -139,10 +393,10 @@
 
               <div class="product-icons">
                 <div class="product-icon-container">
-                  <i class="fa-solid fa-cart-shopping">
+                  <i class="fa-solid fa-cart-shopping cart-icon-product">
                     <p class="add-to-cart">Add To Cart</p>
                   </i>
-                  <i class="fa-solid fa-eye">
+                  <i class="fa-solid fa-eye eye-icon-product">
                     <p class="quick-view">Quick View</p>
                   </i>
                 </div>
@@ -157,16 +411,89 @@
           <div class="product-card">
             <div class="product-image-wrapper">
               <img
-                src="/pictures/photo1.jpg"
+                src="/pictures/home/product-2.jpg"
                 alt=""
                 class="product-card-image"
               />
               <div class="product-icons">
                 <div class="product-icon-container">
-                  <i class="fa-solid fa-cart-shopping">
+                  <i class="fa-solid fa-cart-shopping cart-icon-product">
                     <p class="add-to-cart">Add To Cart</p>
                   </i>
-                  <i class="fa-solid fa-eye">
+                  <i class="fa-solid fa-eye eye-icon-product">
+                    <p class="quick-view">Quick View</p>
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-description">
+              <p class="product-category">Computer table</p>
+              <h6 class="product-label">Desktop Table with Drawers</h6>
+              <p class="product-price">£529.00</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image-wrapper">
+              <img
+                src="/pictures/home/product-3.jpg"
+                alt=""
+                class="product-card-image"
+              />
+              <div class="product-icons">
+                <div class="product-icon-container">
+                  <i class="fa-solid fa-cart-shopping cart-icon-product">
+                    <p class="add-to-cart">Add To Cart</p>
+                  </i>
+                  <i class="fa-solid fa-eye eye-icon-product">
+                    <p class="quick-view">Quick View</p>
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-description">
+              <p class="product-category">Chair</p>
+              <h6 class="product-label">Orange Recliner with Leg Rest</h6>
+              <p class="product-price">£419.00</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image-wrapper">
+              <img
+                src="/pictures/home/product-4.jpg"
+                alt=""
+                class="product-card-image"
+              />
+              <div class="product-icons">
+                <div class="product-icon-container">
+                  <i class="fa-solid fa-cart-shopping cart-icon-product">
+                    <p class="add-to-cart">Add To Cart</p>
+                  </i>
+                  <i class="fa-solid fa-eye eye-icon-product">
+                    <p class="quick-view">Quick View</p>
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-description">
+              <p class="product-category">Chair</p>
+              <h6 class="product-label">Round Short Leg Stool/Chair</h6>
+              <p class="product-price">£229.00</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image-wrapper">
+              <img
+                src="/pictures/home/product-1.jpg"
+                alt=""
+                class="product-card-image"
+              />
+
+              <div class="product-icons">
+                <div class="product-icon-container">
+                  <i class="fa-solid fa-cart-shopping cart-icon-product">
+                    <p class="add-to-cart">Add To Cart</p>
+                  </i>
+                  <i class="fa-solid fa-eye eye-icon-product">
                     <p class="quick-view">Quick View</p>
                   </i>
                 </div>
@@ -181,16 +508,89 @@
           <div class="product-card">
             <div class="product-image-wrapper">
               <img
-                src="/pictures/photo1.jpg"
+                src="/pictures/home/product-2.jpg"
                 alt=""
                 class="product-card-image"
               />
               <div class="product-icons">
                 <div class="product-icon-container">
-                  <i class="fa-solid fa-cart-shopping">
+                  <i class="fa-solid fa-cart-shopping cart-icon-product">
                     <p class="add-to-cart">Add To Cart</p>
                   </i>
-                  <i class="fa-solid fa-eye">
+                  <i class="fa-solid fa-eye eye-icon-product">
+                    <p class="quick-view">Quick View</p>
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-description">
+              <p class="product-category">Computer table</p>
+              <h6 class="product-label">Desktop Table with Drawers</h6>
+              <p class="product-price">£529.00</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image-wrapper">
+              <img
+                src="/pictures/home/product-3.jpg"
+                alt=""
+                class="product-card-image"
+              />
+              <div class="product-icons">
+                <div class="product-icon-container">
+                  <i class="fa-solid fa-cart-shopping cart-icon-product">
+                    <p class="add-to-cart">Add To Cart</p>
+                  </i>
+                  <i class="fa-solid fa-eye eye-icon-product">
+                    <p class="quick-view">Quick View</p>
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-description">
+              <p class="product-category">Chair</p>
+              <h6 class="product-label">Orange Recliner with Leg Rest</h6>
+              <p class="product-price">£419.00</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image-wrapper">
+              <img
+                src="/pictures/home/product-4.jpg"
+                alt=""
+                class="product-card-image"
+              />
+              <div class="product-icons">
+                <div class="product-icon-container">
+                  <i class="fa-solid fa-cart-shopping cart-icon-product">
+                    <p class="add-to-cart">Add To Cart</p>
+                  </i>
+                  <i class="fa-solid fa-eye eye-icon-product">
+                    <p class="quick-view">Quick View</p>
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-description">
+              <p class="product-category">Chair</p>
+              <h6 class="product-label">Round Short Leg Stool/Chair</h6>
+              <p class="product-price">£229.00</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image-wrapper">
+              <img
+                src="/pictures/home/product-1.jpg"
+                alt=""
+                class="product-card-image"
+              />
+
+              <div class="product-icons">
+                <div class="product-icon-container">
+                  <i class="fa-solid fa-cart-shopping cart-icon-product">
+                    <p class="add-to-cart">Add To Cart</p>
+                  </i>
+                  <i class="fa-solid fa-eye eye-icon-product">
                     <p class="quick-view">Quick View</p>
                   </i>
                 </div>
@@ -205,68 +605,78 @@
           <div class="product-card">
             <div class="product-image-wrapper">
               <img
-                src="/pictures/photo1.jpg"
+                src="/pictures/home/product-2.jpg"
                 alt=""
                 class="product-card-image"
               />
               <div class="product-icons">
                 <div class="product-icon-container">
-                  <i class="fa-solid fa-cart-shopping">
+                  <i class="fa-solid fa-cart-shopping cart-icon-product">
                     <p class="add-to-cart">Add To Cart</p>
                   </i>
-                  <i class="fa-solid fa-eye">
+                  <i class="fa-solid fa-eye eye-icon-product">
                     <p class="quick-view">Quick View</p>
                   </i>
                 </div>
               </div>
             </div>
             <div class="product-card-description">
-              <p class="product-category">Armchair</p>
-              <h6 class="product-label">Wooden Rocking Chair</h6>
-              <p class="product-price">£169.00</p>
+              <p class="product-category">Computer table</p>
+              <h6 class="product-label">Desktop Table with Drawers</h6>
+              <p class="product-price">£529.00</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image-wrapper">
+              <img
+                src="/pictures/home/product-3.jpg"
+                alt=""
+                class="product-card-image"
+              />
+              <div class="product-icons">
+                <div class="product-icon-container">
+                  <i class="fa-solid fa-cart-shopping cart-icon-product">
+                    <p class="add-to-cart">Add To Cart</p>
+                  </i>
+                  <i class="fa-solid fa-eye eye-icon-product">
+                    <p class="quick-view">Quick View</p>
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-description">
+              <p class="product-category">Chair</p>
+              <h6 class="product-label">Orange Recliner with Leg Rest</h6>
+              <p class="product-price">£419.00</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image-wrapper">
+              <img
+                src="/pictures/home/product-4.jpg"
+                alt=""
+                class="product-card-image"
+              />
+              <div class="product-icons">
+                <div class="product-icon-container">
+                  <i class="fa-solid fa-cart-shopping cart-icon-product">
+                    <p class="add-to-cart">Add To Cart</p>
+                  </i>
+                  <i class="fa-solid fa-eye eye-icon-product">
+                    <p class="quick-view">Quick View</p>
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-description">
+              <p class="product-category">Chair</p>
+              <h6 class="product-label">Round Short Leg Stool/Chair</h6>
+              <p class="product-price">£229.00</p>
             </div>
           </div>
         </div>
       </section>
       <!-- End Products -->
-      <!-- Testimonials -->
-      <section class="testimonials">
-        <h1>Testimonials</h1>
-        <div class="hr"></div>
-        <div class="testimonials-container">
-          <div class="testimonials-card">
-            <div class="testimonials-card-description">
-              <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit"</p>
-            </div>
-            <div class="testimonials-card-profile">
-              <img src="/pictures/photo1.jpg" alt="" />
-              <p>John Doe</p>
-            </div>
-          </div>
-          <div class="testimonials-card">
-            <div class="testimonials-card-description">
-              <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua"
-              </p>
-            </div>
-            <div class="testimonials-card-profile">
-              <img src="/pictures/photo1.jpg" alt="" />
-              <p>John Doe</p>
-            </div>
-          </div>
-          <div class="testimonials-card">
-            <div class="testimonials-card-description">
-              <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit"</p>
-            </div>
-            <div class="testimonials-card-profile">
-              <img src="/pictures/photo1.jpg" alt="" />
-              <p>John Doe</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Testimonials -->
       <!-- Social Media -->
       <section class="social-media">
         <div class="social-media-container">
@@ -317,6 +727,8 @@
       <p class="copyright">Copyright © 2024 ircStore</p>
       <p class="powered">Powered by ircStore</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
+    <script src="../cart.js"></script>
+    <script src="filter.js"></script>
   </body>
 </html>
