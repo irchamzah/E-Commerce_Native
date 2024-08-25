@@ -37,28 +37,28 @@ document.addEventListener("DOMContentLoaded", function () {
     if (parseInt(minRange.value) >= parseInt(maxRange.value)) {
       minRange.value = maxRange.value - 1;
     }
-    updateRanges();
+    minPrice.value = minRange.value;
   });
 
   maxRange.addEventListener("input", () => {
     if (parseInt(maxRange.value) <= parseInt(minRange.value)) {
       maxRange.value = parseInt(minRange.value) + 1;
     }
-    updateRanges();
+    maxPrice.value = maxRange.value;
   });
 
   minPrice.addEventListener("input", () => {
     if (parseInt(minPrice.value) >= parseInt(maxPrice.value)) {
       minPrice.value = maxPrice.value - 1;
     }
-    updateRanges();
+    minRange.value = minPrice.value;
   });
 
   maxPrice.addEventListener("input", () => {
     if (parseInt(maxPrice.value) <= parseInt(minPrice.value)) {
       maxPrice.value = parseInt(minPrice.value) + 1;
     }
-    updateRanges();
+    maxRange.value = maxPrice.value;
   });
 
   resetButton.addEventListener("click", () => {

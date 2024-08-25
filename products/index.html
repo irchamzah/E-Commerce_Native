@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <!-- Styles -->
+    <link rel="stylesheet" href="products.css" />
     <link rel="stylesheet" href="filter.css" />
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="../cart.css" />
@@ -320,7 +321,7 @@
                 id="min-price"
                 min="10000"
                 value="10000"
-                step="1000"
+                step="10000"
               />
             </div>
             <div>
@@ -330,27 +331,51 @@
                 id="max-price"
                 min="10000"
                 value="10000000"
-                step="1000"
+                step="10000"
               />
             </div>
           </div>
         </div>
         <!-- categories  -->
-        <div class="categories">
+        <div class="categories-container">
           <label>Product Categories</label>
           <div class="categories">
             <div class="category">
               <input type="checkbox" id="category-1" />
-              <label for="category-1">Category 1</label>
+              <label for="category-1">Category 1 <span>(10)</span></label>
             </div>
             <div class="category">
               <input type="checkbox" id="category-2" />
-              <label for="category-2">Category 2</label>
+              <label for="category-2">Category 2 <span>(10)</span></label>
+            </div>
+            <div class="category">
+              <input type="checkbox" id="category-3" />
+              <label for="category-3">Category 3 <span>(10)</span></label>
+            </div>
+            <div class="category">
+              <input type="checkbox" id="category-4" />
+              <label for="category-4">Category 4 <span>(10)</span></label>
+            </div>
+            <div class="category">
+              <input type="checkbox" id="category-5" />
+              <label for="category-5">Category 5 <span>(10)</span></label>
+            </div>
+            <div class="category">
+              <input type="checkbox" id="category-6" />
+              <label for="category-6">Category 6 <span>(10)</span></label>
             </div>
           </div>
         </div>
       </div>
       <!-- end content -->
+
+      <!-- footer -->
+      <div class="leftbar-filter-footer">
+        <div>
+          <button id="apply-button">Apply</button>
+        </div>
+      </div>
+      <!-- end footer -->
     </div>
 
     <div id="overlay" class="overlay"></div>
@@ -373,8 +398,8 @@
               <option value="oldest">Sort by price: high to low</option>
             </select>
             <div>
-              <img src="../pictures/svg/grid-4.svg" alt="arrow-down-a-z" />
-              <img src="../pictures/svg/grid-2.svg" alt="arrow-down-z-a" />
+              <img src="../pictures/svg/grid-4.svg" id="gridViewBtn" />
+              <img src="../pictures/svg/grid-2.svg" id="listViewBtn" />
             </div>
           </div>
         </div>
